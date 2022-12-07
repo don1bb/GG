@@ -2,3 +2,5 @@
 .idea
 venv
 __pycache__/
+main.py
+lesson_1.py
