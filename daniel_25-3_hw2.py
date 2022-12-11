@@ -35,7 +35,7 @@ class SuperHero2(SuperHero):
            self.health = sss
 
     def phrase(self):
-           print('fly in the True_phrase')
+           print('fly in the True_phrase\n')
 
     def desti(self):
          self.fly = True
@@ -62,7 +62,7 @@ class SuperHero3(SuperHero2):
         self.health = sss
 
     def phrase(self):
-        print('fly in the True_phrase')
+        print('fly in the True_phrase\n')
 
     def desti(self):
         self.fly = True
@@ -80,14 +80,14 @@ class Villain(SuperHero3):
     def __init__(self, name, health, superpowers, fly=False, damage=False):
         super().__init__(name, health, superpowers, fly, damage)
 
-    def gen_x(self): ...
+  #  def gen_x(self): ...
 
     def crit(self):
             print(f'Crit dm: {self ** 2}')
 
-seet = Villain('Vorvols\n',150 , 'fire\n' )
+seet = Villain('Vorvols',150 , 'fire' )
 print(seet)
-seet.gen_x
+#seet.gen_x
 Villain.crit(seet.damage)
 
 
