@@ -1,7 +1,7 @@
 class Bank:
     money = 'money'
 
-    def __init__(self, name, balance=100):
+    def __init__(self, name, balance=50):
         self._name = name
         self._balance = balance
 
@@ -20,14 +20,20 @@ class Bank:
     def __jackpot(self):
         self._balance *= 10
 
-    def _sss(self, obj):
-        return self._balance + obj._balance
-a = Bank('Miko')
+    def sss(self, str):
+        return self._balance + str._balance
+
+    def _sss(self, str ):
+        return self._balance -  str._balance
+
+a = Bank('Beka')
+a.name ='Miko'
 a.moneyX()
 #a._kill()
 a._sss(a)
-print(a._sss(a))
-print(a._name, a._sss(a))
+a.sss(a)
+print(a.name,a._sss(a))
+print(a._name,a.sss(a))
 
 
 
